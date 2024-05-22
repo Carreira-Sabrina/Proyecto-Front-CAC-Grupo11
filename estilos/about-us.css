@@ -1,0 +1,18 @@
+
+
+
+@keyframes animacionTitulo{
+    0%{
+        transform: translateX(-700px);
+        color: var(--color-seal-brown);
+    }
+    100%{
+        transform: translateX(0);
+        color: var(--color-raspberry);
+    }
+}
+
+.titulo-animado{
+    animation-name: animacionTitulo;
+    animation-duration: 3s;
+}
