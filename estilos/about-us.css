@@ -1,18 +1,35 @@
 
-
-
 @keyframes animacionTitulo{
     0%{
         transform: translateX(-700px);
         color: var(--color-seal-brown);
     }
-    100%{
+    84%{
         transform: translateX(0);
         color: var(--color-raspberry);
+    }
+    88%{
+        /*rebote*/
+        transform: translateY(-25px);
+    }
+    92%{
+        /*rebote*/
+        transform: translateY(0);
+    }
+    96%{
+        /*rebote*/
+        transform: translateY(25px);
+    }
+    100%{
+        /*rebote*/
+        transform: translateY(0);
     }
 }
 
 .titulo-animado{
+    margin-bottom: 2.5rem;
+    margin-top: 2rem;
     animation-name: animacionTitulo;
     animation-duration: 3s;
+    animation-delay: 0.3s;
 }
