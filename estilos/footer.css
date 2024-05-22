@@ -1,0 +1,74 @@
+/* Estilos del footer*/
+
+/* ===========================================================================*/
+/*  IMPORTATE !!!! */
+/*  POR DEFECTO EL ESTILO ESTÁ DEFINIDO EN TAMAÑO ESCRITORIO */
+/* ===========================================================================*/
+
+footer{
+    background: linear-gradient(136deg,rgb(71,36,21) 40%, rgb(206,45,79) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+    color:var(--color-secundario);
+}
+
+
+.contenedor-logo-footer img{
+    display: block;
+    height: 64px;
+    width: 64px;
+}
+
+
+.footer__contenido{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 1.25rem;
+    padding: 0.75rem;
+}
+
+
+.menu-redes-footer__link{
+    display: inline-block;
+    margin-left: 1.5rem;
+    transition: all 0.4s ease-in-out;
+}
+
+.menu-redes-footer__link:hover{
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid var(--color-secundario);
+    transform: translateY(-0.5rem);
+}
+
+.menu-redes-footer a{
+    color: var(--color-secundario);
+    font-size: 1.75rem;
+}
+
+
+/*  ================================ MEDIA QUERIES  ================================ */
+/*=================================================================================== */
+
+/* MODO DISPOSITIVOS MÓVILES  HASTA 768 PX */
+/****************************************/
+
+@media screen and (max-width:768px) {
+    .footer__contenido{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 2rem;
+    }
+
+    .footer__contenido p{
+        text-align: center;
+    }
+
+    .menu-redes-footer__link{
+        margin-left: 1rem;
+        
+    }
+}

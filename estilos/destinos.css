@@ -1,0 +1,92 @@
+/* ==========================================================================
+    ESTILOS DE DESTINOS.HTML
+=============================================================================*/
+
+/* ===========================================================================*/
+/*  IMPORTATE !!!! */
+/*  POR DEFECTO EL ESTILO ESTÁ DEFINIDO EN TAMAÑO ESCRITORIO */
+/* ===========================================================================*/
+
+body{
+    background-color: var(--color-secundario);
+}
+
+h1{
+    margin: 1.75rem 0;
+    font-family: var(--fuente-acento);
+    font-weight: bolder;
+    font-size: 3rem;
+    color:var(--color-raspberry);
+    text-shadow: 2px 3px 2px rgba(71,36,21,0.6);
+}
+
+.txt-presentacion{
+    font-weight: bold;
+    font-size: 1.75rem;
+    margin-bottom: 2.25rem;
+    color:var(--color-seal-brown);
+}
+
+
+/* Cada article lleva la clase contenedor-destino*/
+.contenedor-destino{
+    padding: 1.2rem;
+    border-bottom: 3px solid var(--color-seal-brown);
+}
+
+.contenedor-destino h2{
+    margin-bottom: 1.8rem;
+    font-size: 2rem;
+    color: var(--color-seal-brown);
+}
+
+.contendedor-destino__presentacion{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+}
+
+.contenedor-destino__presentacion-imagen img{
+    box-shadow: 8px 8px 5px 0px rgba(206,45,79,0.5);
+}
+
+.contendedor-destino__presentacion p{
+    margin-top: 1.5rem;
+}
+
+.contenedor-destino__presentacion-texto{
+    font-size: 1.5rem;
+}
+
+.contenedor-destino__presentacion-texto span{
+    margin-right: 1rem;
+    font-size: 1.75rem;
+}
+
+/*  ================================ MEDIA QUERIES  ================================ */
+/*=================================================================================== */
+
+/* MODO DISPOSITIVOS PEQUEÑOS  HASTA 576 PX */
+@media screen and (max-width:576px){
+    h1{
+        margin: 1.5rem 0;
+        font-size: 2.75rem;
+    }
+
+
+    .txt-presentacion{
+        font-weight: bold;
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+}
+
+/* MODO DISPOSITIVOS MÓVILES  HASTA 992 PX */
+/****************************************/
+@media screen and (max-width:992px) {
+    
+    .contendedor-destino__presentacion{
+        grid-template-columns:1fr; /*sólo una columna */
+    }
+    
+}

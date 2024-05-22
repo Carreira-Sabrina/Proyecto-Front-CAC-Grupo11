@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de Argentina a un click! </title>
+    <!-- Agrego el link al CDN de fontAwesome para que se vean los iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!--Favicon-->
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <!--Termina Favicon-->
+
+    <link rel="stylesheet" href="../estilos/reset.css"> <!-- reset -->
+    <link rel="stylesheet" href="../estilos/global.css"> <!-- variables y clases de utilidad -->
+    <link rel="stylesheet" href="../estilos/header.css"> <!-- header/navbar -->
+    <link rel="stylesheet" href="../estilos/contacto.css"> <!-- formulario contacto (esta página) -->
+    <link rel="stylesheet" href="../estilos/footer.css"> <!-- footer -->
+
+</head>
+<body>
+    <div class="contenedor-general">
+        <header class="encabezado padding-alrededor">
+            <div class="contenedor-logo">  
+                <a class="logo" href="../index.html">Argentina a un Click !</a>
+            </div><!--fin del logo-->
+
+            <!--NAV-->
+            <nav id="nav__contenedor">
+                <ul class="nav__lista-links">
+                    <li class="nav__link-simple">
+                        <a href="../index.html">Inicio</a>
+                    </li>
+                    <li class="link-con-submenu">
+                        Nuestros Hoteles <span><i class="fa-solid fa-caret-down"></i></span>
+                        <!-- ACA VA UN SUBMENU-->
+                        <ul class="nav__submenu">
+                            <li class="nav__submenu-item"><a href="">Hotel de Damián</a></li>
+                            <li class="nav__submenu-item"><a href="">Hotel de Franco</a></li>
+                            <li class="nav__submenu-item"><a href="">Hotel de Juan Pablo</a></li>
+                            <li class="nav__submenu-item"><a href="">Hotel de Verónica</a></li>
+                            <li class="nav__submenu-item"><a href="hoteles/aura-patagonia/aura-patagonia.html">Aura Patagonia</a></li>
+                        </ul><!--fin del submenu-->
+                    </li><!--fin del link con submenu-->
+                    <li  class="nav__link-simple">
+                        <a href="../pages/destinos.html">Destinos</a> <!--ACÁ PODRIA HABER TAMBIEN UN SUBMENU-->
+                    </li>
+                    <li class="nav__link-simple">
+                        <a href="/pages/contacto.html">Contacto</a>
+                    </li>
+                    <li  class="nav__link-simple">
+                        <a href="/pages/aboutUs.html">Acerca de nosotros...</a>
+                    </li>
+                </ul>    
+            </nav><!--fin del NAV-->
+            <!--ESTE ES EL BOTON QUE MUESTRA EL MENU EN LAS PANTALLAS MÁS PEQUEÑAS. NO DEBE VERSE EN MODO ESCRITORIO-->
+            <button id="btn__menu-movil"><i class="fa-solid fa-bars"></i></button>
+        </header><!--fin del header-->
+
+        <main>
+            
+        </main>
+
+
+        <footer>
+            <div class="contenedor-logo-footer">
+                <img src="../images/logo-argentina.png" alt="">
+            </div><!--fin contenedor logo footer-->
+
+            <div class="footer__contenido">
+                <p>Te esperamos en nuestras redes sociales ! </p>
+                <ul class="menu-redes-footer">
+                    <li class="menu-redes-footer__link"><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li class="menu-redes-footer__link"><a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li class="menu-redes-footer__link"><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></li>
+                    <li class="menu-redes-footer__link"><a href="https://ar.pinterest.com/" target="_blank"><i class="fa-brands fa-pinterest"></i></a></li>
+                    <li class="menu-redes-footer__link"><a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div><!--fin footer__contenido-->
+
+        </footer><!--fin footer-->
+
+    </div><!--fin contenedor general-->
+
+
+    <!--Script que maneja el menú del navbar-->
+    <script src="../js/script.js"></script>
+</body>
+</html>

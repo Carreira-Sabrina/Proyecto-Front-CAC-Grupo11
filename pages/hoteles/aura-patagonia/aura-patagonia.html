@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complejo Aura Patagonia</title>
+    <!--Google Material Icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Agrego el link al CDN de fontAwesome para que se vean los iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!--Favicon-->
+    <link rel="shortcut icon" href="../../../images/favicon.ico" type="image/x-icon">
+    <!--Termina Favicon-->
+    <link rel="stylesheet" href="../../../estilos/reset.css"><!--reset-->
+    <link rel="stylesheet" href="../../../estilos/global.css"><!--variables y clases de utilidad-->
+    <link rel="stylesheet" href="../../../estilos/header.css"><!--header - nav-->
+    <link rel="stylesheet" href="../../../estilos/aura-patagonia.css"><!--estilos de esta página-->
+    <link rel="stylesheet" href="../../../estilos/footer.css"><!--footer-->
+</head>
+<body>
+    <div class="contenedor-general">
+        <!--HEADER-->
+        <header class="encabezado padding-alrededor">
+            <div class="contenedor-logo">  
+                <a class="logo" href="../index.html">Argentina a un Click !</a>
+            </div><!--fin del logo-->
+
+            <!--NAV-->
+            <nav id="nav__contenedor">
+                <ul class="nav__lista-links">
+                    <li class="nav__link-simple">
+                        <a href="../index.html">Inicio</a>
+                    </li>
+                    <li class="link-con-submenu">
+                        Nuestros Hoteles <span><i class="fa-solid fa-caret-down"></i></span>
+                        <!-- ACA VA UN SUBMENU-->
+                        <ul class="nav__submenu">
+                            <li class="nav__submenu-item"><a href="">Hotel de Damián</a></li>
+                            <li class="nav__submenu-item"><a href="">Hotel de Franco</a></li>
+                            <li class="nav__submenu-item"><a href="">Hotel de Juan Pablo</a></li>
+                            <li class="nav__submenu-item"><a href="">Hotel de Verónica</a></li>
+                            <li class="nav__submenu-item"><a href="">Hotel de Sabrina</a></li>
+                        </ul><!--fin del submenu-->
+                    </li><!--fin del link con submenu-->
+                    <li  class="nav__link-simple">
+                        <a href="../pages/destinos.html">Destinos</a> <!--ACÁ PODRIA HABER TAMBIEN UN SUBMENU-->
+                    </li>
+                    <li class="nav__link-simple">
+                        <a href="/pages/contacto.html">Contacto</a>
+                    </li>
+                    <li  class="nav__link-simple">
+                        <a href="/pages/aboutUs.html">Acerca de nosotros...</a>
+                    </li>
+                </ul>    
+            </nav><!--fin del NAV-->
+            <!--ESTE ES EL BOTON QUE MUESTRA EL MENU EN LAS PANTALLAS MÁS PEQUEÑAS. NO DEBE VERSE EN MODO ESCRITORIO-->
+            <button id="btn__menu-movil"><i class="fa-solid fa-bars"></i></button>
+        </header><!--fin del header-->
+
+        <!-- HERO -->
+        <section id="hero">
+            <div class="hero-contenido">
+                <div class="hero-logo-container">
+                    <img class="hero-logo" src="../../../images/aura-patagonia/icons/hotel-logo-white-sm.png" alt="logo">
+                </div>
+                <div class="hero-text-container">
+                    <h1 class="hero-heading">Complejo Aura Patagonia</h1>
+                    <p class="hero-text">Un oasis de tranquilidad en el corazón de Trelew</p>
+                </div>
+            </div>
+        </section> <!-- final hero-->
+
+        <main>
+            <!--SERVICIOS-->
+            <section id="servicios">
+                <div class="presentacion-servicios">
+                    <h2>Bienvenidos al Complejo Aura Patagonia, su refugio de lujo en la vibrante ciudad de Trelew.</h2>
+                    <h3>¿Qué tenemos para ofrecerle?</h3>
+                    <p> Somos más que un hotel: somos un complejo en permanente expansión. Contamos con 
+                        20 departamentos totalmente equipados, de uno, dos o tres ambientes, y al mismo tiempo
+                        ponemos a su disposición nuestro hotel de 30 habitaciones. 
+                    </p>   
+                </div><!--end of presentacion servicios-->
+                <div class="contenedor-tarjetas-servicios">
+
+                    <div class="tarjeta-servicio">
+                        <div class="contenedor-imagen-servicio">
+                            <img src="../../../images/aura-patagonia/img/servicios/erik-mclean-U3GDAlQrsBc-unsplash.jpg" alt="estacionamiento">
+                        </div>
+                        <div class="texto-servicio">
+                            <p><span class="material-symbols-outlined">garage</span>Estacionamiento gratuito</p>
+                        </div>
+                    </div><!--end of tarjeta servicio-->
+
+                    <div class="tarjeta-servicio">
+                        <div class="contenedor-imagen-servicio">
+                            <img src="../../../images/aura-patagonia/img/servicios/gym-gina-lin-m27OTMegUyA-unsplash.jpg" alt="gimnasio">
+                        </div>
+                        <div class="texto-servicio">
+                            <p><span class="material-symbols-outlined">exercise</span>Gimnasio</p>
+                        </div>
+                    </div><!--end of tarjeta servicio-->
+
+                    <div class="tarjeta-servicio">
+                        <div class="contenedor-imagen-servicio">
+                            <img src="../../../images/aura-patagonia/img/servicios/spa-the-anam-X1s5YSBw8lU-unsplash.jpg" alt="spa">
+                        </div>
+                        <div class="texto-servicio">
+                            <p><span class="material-symbols-outlined">spa</span>Spa</p>
+                        </div>
+                    </div><!--end of tarjeta servicio-->
+
+                    <div class="tarjeta-servicio">
+                        <div class="contenedor-imagen-servicio">
+                            <img src="../../../images/aura-patagonia/img/servicios//wifi-hannah-wei-aso6SYJZGps-unsplash.jpg" alt="persona usando una laptop">
+                        </div>
+                        <div class="texto-servicio">
+                            <p><span class="material-symbols-outlined">wifi</span>Wifi gratuito</p>
+                        </div>
+                    </div><!--end of tarjeta servicio-->
+
+                    <div class="tarjeta-servicio">
+                        <div class="contenedor-imagen-servicio">
+                            <img src="../../../images/aura-patagonia/img/servicios/resto-pourya-jan-VX3e2xLeoiQ-unsplash.jpg" alt="restaurante">
+                        </div>
+                        <div class="texto-servicio">
+                            <p><span class="material-symbols-outlined">restaurant</span>Restobar las 24 hs</p>
+                        </div>
+                    </div><!--end of tarjeta servicio-->
+
+                    <div class="tarjeta-servicio">
+                        <div class="contenedor-imagen-servicio">
+                            <img src="../../../images/aura-patagonia/img/servicios/pets-andrew-s-ouo1hbizWwo-unsplash.jpg" alt="estacionamiento">
+                        </div>
+                        <div class="texto-servicio">
+                            <p><span class="material-symbols-outlined">pets</span>Mascotas bienvenidas !</p>
+                        </div>
+                    </div><!--end of tarjeta servicio-->
+
+                </div><!--end of contenedor tarjetas servicios-->
+
+            </section><!-- final servicios-->
+
+            <!--UBICACION-->
+            <section id="section-ubicacion">
+                <div class="ubicacion__contenedor-tarjetas">
+                    <article class="tarjeta-ubicacion">
+                        <h3 class="tarjeta-ubicacion__encabezado">¿Dónde estamos?</h3>
+                        <p class="tarjeta-ubicacion__texto">
+                            Ubicado en el corazón de la ciudad, a solo pasos de la Plaza Independencia y del Museo Regional Egidio Raffaeli, el Complejo Aura Patagonia le ofrece una experiencia de alojamiento inigualable.
+                        </p>
+                        <iframe class="tarjeta-ubicacion__mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46486.91068842141!2d-65.31305004999999!3d-43.2633264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbe0144b6cf6769bb%3A0x9cbd6c76af132e0d!2sTrelew%2C%20Chubut!5e0!3m2!1ses-419!2sar!4v1712964529066!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </article> <!-- final tarjeta ubicacion -->
+                    <article class="tarjeta-accesos">
+                        <h3 class="tarjeta-ubicacion__encabezado">¿Cómo llegar?</h3>
+                        <ul class="lista-accesos">
+                            <li class="lista-accesos__item">
+                                <span class="material-symbols-outlined">travel</span>
+                                En avión: El aeropuerto Almirante Marcos Zar (TRE) se encuentra a 6 km del hotel. Ofrecemos servicio de traslado al aeropuerto bajo petición.
+                            </li>
+                            <li class="lista-accesos__item">
+                                <span class="material-symbols-outlined">directions_car</span>
+                                En coche: Trelew se encuentra a 274 km de Comodoro Rivadavia y a 1.411 km de Buenos Aires.
+                            </li>
+                        </ul>
+                        <!--acá quedaría coherente un carrousel de bootstrap-->
+                        <!-- con algunas imágenes de Trelew y del complejo-->
+
+                    </article><!--final tarjeta accesos -->
+                </div> <!-- final de ubicacion__contenedor-tarjetas -->
+            </section> <!-- final de  section ubicacion-->
+
+            <!--HABITACIONES-->
+            <section id="section-habitaciones">
+                <h2>¿Qué opción se ajusta más a sus deseos?</h2>
+                <div class="contenedor-tarjetas-habitaciones">
+                    <article class="tarjeta-habitacion" id="habitacion">
+                        <div class="tarjeta-habitacion__contenedor-img">
+                            <img src="../../../images/aura-patagonia/img/alojamientos/habitacion/cuarto-zac-gudakov-wQymLgpR9yQ-unsplash.jpg" alt="Habitacion del hotel">
+                            <img src="../../../images/aura-patagonia/img/alojamientos/habitacion/baño-zac-gudakov-wCY8cjzVUAM-unsplash.jpg" alt="Baño de habitacion de hotel">
+                        </div>
+                        <div class="tarjeta-habitacion__conenido">
+                            <h3>Habitación en nuestro hotel</h3>
+                            <p>
+                                Disponemos de habitaciones en base simple, doble y triple. Nos ocupamos
+                                de todo lo que necesites mediante nuestro servicio de conserjería
+                                disponible las 24 hs. 
+                            </p>
+                            <a href="../../contacto.html" class="btn-saber-mas">Quiero saber más</a>
+                        </div>
+                    </article> <!-- final de tarjeta habitacion-->
+
+                    <article class="tarjeta-habitacion" id="departamento">
+                        <div class="tarjeta-habitacion__contenedor-img">
+                            <img src="../../../images/aura-patagonia/img/alojamientos/depto/cuarto-zac-gudakov-RF6eSzTqUqY-unsplash.jpg" alt="Habitacion de un departamento">
+                            <img src="../../../images/aura-patagonia/img/alojamientos/depto/cocina-zac-gudakov-4blVDGc7zhY-unsplash.jpg" alt="Baño de habitacion de hotel">
+                            <img src="../../../images/aura-patagonia/img/alojamientos/depto/baño-zac-gudakov-HERD_UNPvps-unsplash.jpg" alt="Baño de habitacion de hotel">
+                            <img src="../../../images/aura-patagonia/img/alojamientos/depto/sala-zac-gudakov-mw_mj-noYHM-unsplash.jpg" alt="Baño de habitacion de hotel">
+                        </div>
+                        <div class="tarjeta-habitacion__conenido">
+                            <h3>Departamento en nuestro complejo</h3>
+                            <p>
+                                Disponemos de departamentos de uno, dos y tres ambientes totalmente equipados para que te 
+                                sientas tán cómodo como en tu propio hogar.
+                            </p>
+                            <a href="../../contacto.html" class="btn-saber-mas">Quiero saber más</a>
+                        </div>
+                    </article> <!-- final de tarjeta departamento-->
+                </div> <!--end of contenedor tarjeta habitaciones-->
+            </section> <!-- final de section habitaciones -->
+        </main>
+        <!--FOOTER -->
+        <footer>
+            <div class="contenedor-logo-footer">
+                <img src="../../../images/logo-argentina.png" alt="">
+            </div><!--fin contenedor logo footer-->
+
+            <div class="footer__contenido">
+                <p>Te esperamos en nuestras redes sociales ! </p>
+                <ul class="menu-redes-footer">
+                    <li class="menu-redes-footer__link"><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li class="menu-redes-footer__link"><a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li class="menu-redes-footer__link"><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></li>
+                    <li class="menu-redes-footer__link"><a href="https://ar.pinterest.com/" target="_blank"><i class="fa-brands fa-pinterest"></i></a></li>
+                    <li class="menu-redes-footer__link"><a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div><!--fin footer__contenido-->
+
+        </footer><!--fin footer-->
+
+    </div><!--fin contenedor general-->
+
+    <!--Script que maneja el menú del navbar-->
+    <script src="../../../js/script.js"></script>
+</body>
+</html>

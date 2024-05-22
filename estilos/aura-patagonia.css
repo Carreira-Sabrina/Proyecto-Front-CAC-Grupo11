@@ -1,0 +1,342 @@
+/*GOOGLE FONTS*/
+/*@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&family=Sora:wght@100..800&display=swap');*/
+
+
+
+/*AURA-PATAGONIA.HTML */
+/*=================================================*/
+
+/* ===========================================================================*/
+/*  IMPORTATE !!!! */
+/*  POR DEFECTO EL ESTILO ESTÁ DEFINIDO EN TAMAÑO ESCRITORIO */
+/* ===========================================================================*/
+
+
+
+
+/* ----- VARIABLES ----- */
+:root{
+    /*Fuentes*/
+    --custom-ff-headings: "Sawarabi Mincho", serif;
+    --custom-ff-regular: "Sora", sans-serif;
+    /*Colores*/
+    --custom-color-charcoal: #2f4049;
+    --custom-color-slategray: #768990;
+    --custom-color-gunmetal: #1D343F;
+    --custom-color-cadetgray: #9FB0B6;
+    --custom-color-ruddyblue: #7EABD4; /*call to action color?*/
+}
+
+body{
+    background-color:var(--custom-color-cadetgray);
+}
+
+h1,h2,h3{
+    font-family: var(--custom-ff-headings);
+    color: var(--custom-color-gunmetal);
+}
+
+p{
+    font-family: var(--custom-ff-regular);
+}
+
+/* ======= HERO ======= */
+
+#hero{
+    width:100%;
+    height: calc(100vh - 100px); /*100px es la altura del header */
+    background-image:linear-gradient(163deg, rgba(118,137,144,0.2) 0%, 
+    rgba(47,64,73,0.2) 50%),url("../images/aura-patagonia/img/HERO-zac-gudakov-lu58343qe8I-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 1rem;
+}
+
+.hero-contenido{
+    width:100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    gap:2rem;
+    align-items: center;
+}
+
+.hero-logo{
+    width:80px;
+}
+
+.hero-text-container{
+    text-align: center;
+}
+
+.hero-heading{
+    font-size: 3.5rem;
+    color: var(--custom-color-cadetgray);
+    backdrop-filter: blur(5px);
+    text-shadow: 4px 4px 2px rgba(47,64,73,0.59);
+    margin-bottom: 1rem;
+}
+
+.hero-text{
+    font-size: 1.5rem;
+    color:var(--custom-color-gunmetal);
+    font-weight: 600;
+    text-shadow: 4px 4px 2px rgba(245,245,245,0.59);
+}
+
+/* ========= SERVICIOS ================== */
+#servicios{
+    padding: 1.5rem;
+}
+
+.presentacion-servicios h2,h3{
+    margin-bottom: 1rem;
+}
+
+.presentacion-servicios h2{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.presentacion-servicios h3{
+    font-size: 1.6rem;
+}
+
+.presentacion-servicios p{
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.3;
+}
+
+.contenedor-tarjetas-servicios{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:1rem;
+}
+
+.tarjeta-servicio{
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.texto-servicio{
+    background-color: var(--custom-color-charcoal);
+    color: var(--custom-color-cadetgray);
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.texto-servicio span{
+    margin-right: 1rem;
+    vertical-align: sub;
+}
+
+
+/* ======= UBICACION ======= */
+
+#section-ubicacion{
+    padding-top:2rem; /* ????? */
+}
+
+.ubicacion__contenedor-tarjetas{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+
+    font-size: 1.25rem;
+    line-height: 1.3;
+}
+
+.tarjeta-ubicacion,.tarjeta-accesos{
+    padding:1rem;
+}
+
+.tarjeta-ubicacion__encabezado{
+    margin-bottom: 2rem;
+}
+
+.tarjeta-ubicacion__texto{
+    margin-bottom: 1.5rem;
+}
+
+.tarjeta-ubicacion__mapa{
+    width: 100%;
+    aspect-ratio: 1;
+    border: 3px solid var(--custom-color-charcoal);
+    box-shadow: 5px 5px 10px 0px rgba(10,10,10,0.5);
+    border-radius: 1rem;
+    
+}    
+
+.lista-accesos__item:nth-of-type(1){
+    /*este estilo se aplica al primer elemento del conjunto con esta clase*/
+    margin-bottom: 2rem;
+}
+
+.lista-accesos__item{
+    font-family: var(--custom-ff-regular);
+}
+
+.lista-accesos__item span{
+    font-size: 2rem;
+    vertical-align: sub;
+    margin-right: 1rem;
+}
+
+/* ======= HABITACIONES ======= */
+#section-habitaciones{
+    padding: 1.5rem;
+}
+
+#section-habitaciones h2{
+    margin-bottom: 1.5rem;
+}
+
+
+.contenedor-tarjetas-habitaciones{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.75rem;
+    font-size: 1.25rem;
+}
+
+.tarjeta-habitacion__contenedor-img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.tarjeta-habitacion__contenedor-img img{
+    border-radius: 0.75rem;
+}
+
+.tarjeta-habitacion__conenido{
+    padding: 1rem;
+}
+
+.tarjeta-habitacion__conenido h3{
+    margin-top: 1.5rem;
+}
+
+.btn-saber-mas{
+    margin-top: 1.5rem;
+    display: inline-block;
+    padding: 1.25rem 1.5rem;
+    background-color: var(--custom-color-gunmetal);
+    color: whitesmoke;
+    font-family: var(--custom-ff-regular);
+    text-decoration: none; 
+    border-radius: 0.75rem;
+    font-weight: 600;
+}
+
+/*  ================================ MEDIA QUERIES  ================================ */
+/*=================================================================================== */
+/* 1) MOVILES PEQUEÑOS HASTA 576px*/
+/* No se muestran imágenes etc que no sean indispensables*/
+/* El número de columnas que ocupan el ancho se reduce a una */
+@media screen and (max-width:576px) {
+    /* ===== HERO ==== */
+    #hero{
+        width:100%; /*???????*/
+        height: 65vh;
+        background-position-x: center;
+        background-position-y: top ;
+    }
+    .hero-contenido{
+        width: 100%;
+        padding-top: 1rem;
+        text-align: center;
+        justify-content: space-around;
+
+    }
+    .hero-logo{
+        width: 64px;
+    }
+    .hero-heading{
+        font-size: 2.25rem; 
+        color:var(--custom-color-gunmetal);
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+        color:var(--custom-color-ruddyblue);    
+    }
+    /* ==== SERVICIOS ==== */
+    /* Como el espacio es muy pequeño se muestra solo el texto de los servicios
+    y se esconden las imagenes, se deja el texto y los íconos*/
+    .contenedor-tarjetas-servicios{
+        /*se usa solo una columna*/
+        grid-template-columns: 1fr;
+    }
+    .contenedor-imagen-servicio{
+        display: none;
+    }
+    .presentacion-servicios h3{
+        text-align: center;
+    }
+
+    /* ==== UBICACION ==== */
+   .ubicacion__contenedor-tarjetas{
+    grid-template-columns: 1fr;
+   }
+   .tarjeta-ubicacion__encabezado{
+    text-align: center;
+   }
+
+   /* ==== HABITACIONES */
+   #section-habitaciones h2{
+    text-align: center;
+   }
+   .contenedor-tarjetas-habitaciones{
+    grid-template-columns: 1fr;
+   }
+   .tarjeta-habitacion__contenedor-img{
+    /*las imágenes se muestran una debajo de la otra porque si no se reducen mucho*/
+    display: block;
+   }
+}/* fin de  max-width:576px CELULAR */
+
+/* 2) CELULARES DE TAMAÑO MAYOR Y TABLETS */
+/* ya hay más espacio para mostrar casi todos los elementos pero se mantiene una columna*/
+@media screen and (min-width:577px) and (max-width:768px) {
+    /*el HERO puede continuar como está */
+    
+    /* ==== SERVICIOS ===== */
+    .contenedor-tarjetas-servicios{
+        grid-template-columns: 1fr;
+    }
+     /* ==== UBICACION ==== */
+   .ubicacion__contenedor-tarjetas{
+    grid-template-columns: 1fr;
+   }
+    /* ==== HABITACIONES ==== */
+    /*Mostrar ún los tipos de habitaciones uno bajo el otro y las imágenes de igual manera*/
+    .contenedor-tarjetas-habitaciones{
+        grid-template-columns: 1fr;
+    }
+    .tarjeta-habitacion__contenedor-img{
+    /*las imágenes se muestran una debajo de la otra porque si no se reducen mucho*/
+    display: block;
+    }
+}/* fin de  min-width:577px and max-width:768px CELULAR */
+
+/* 3) TABLETS MAS GRANDES Y LAPTOPS */
+@media screen and (min-width:769px) and (max-width:992px) {
+    /*ya se pueden mostrar dos columnas en el layout*/
+    /*el HERO puede continuar como está */
+    
+    /* ==== SERVICIOS ===== */
+    .contenedor-tarjetas-servicios{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    /* ==== HABITACIONES ==== */
+    .contenedor-tarjetas-habitaciones{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+

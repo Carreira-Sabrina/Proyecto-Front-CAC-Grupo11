@@ -1,0 +1,167 @@
+/*CONTACTO.HTML */
+/*=================================================*/
+
+/* ===========================================================================*/
+/*  IMPORTATE !!!! */
+/*  POR DEFECTO EL ESTILO ESTÁ DEFINIDO EN TAMAÑO ESCRITORIO */
+/* ===========================================================================*/
+
+
+/*clase de utilidad para darle formato al texto de las label y p que describen los campos del formulario*/
+.formato-label{
+    font-size: 1.5rem;
+    color:var(--color-raspberry);
+    font-weight: bold;
+}
+
+body{
+    background-color: var(--color-secundario);
+}
+
+h1{
+    font-family: var(--fuente-acento);
+    font-weight: bolder;
+    margin: 1.5rem 0;
+    color:var(--color-principal);
+    letter-spacing: -0.5px;
+}
+
+.contenedor-contenido-contacto{
+    margin: 0 auto; /*centrar el contenedor en la pagina*/
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+
+.contenedor-campos{
+    margin-bottom: 1.5rem;
+}
+
+.contenedor-campos label{
+    display: block;
+} 
+
+.fila-radiobtn label{
+    display: inline-block;
+}
+
+.contenedor-campos input[type="radio"]{
+    display: inline-block;
+} 
+
+
+.contenedor-formularioinput:not([type="radio"]),select,textarea{
+    box-shadow: 6px 6px 5px 0px rgba(78,59,49,0.6);
+}
+
+.contenedor-formulario input{
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+}
+
+
+/*No quiero que los input de los celulares ocupen toda la linea tampoco los radio button, esto cambia con media queries*/
+.contenedor-formulario input:not(#input-prefijo-celular,#input-num-celular,[type="radio"]){
+    width: 100%;
+}
+
+select{
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 6px 0;
+}
+
+.grupo-radiobtn{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contenedor-campos p{
+    margin-bottom: 0.75rem;
+}
+
+
+textarea{
+    width: 100%;
+    min-height: 150px;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+#btn-enviar-formulario{
+    font-size: 1.5rem;
+    width: 95%;
+    display: block;
+    margin: 0 auto;
+    padding: 12px 0;
+    background-color: var(--color-raspberry);
+    color:var(--color-secundario)
+}
+
+#btn-enviar-formulario span{
+    margin-left: 0.75rem;
+}
+
+#contenedor-msj-error{
+    text-align: center;
+}
+
+#contenedor-msj-error.datos-incorrectos{
+    font-size: 1.5rem;
+    color:red;
+}
+#contenedor-msj-error.datos-correctos{
+    font-size: 1.5rem;
+    color: green;
+}
+
+.decoracion-formulario{
+    background-image: url("../images/contacto/ryan-ancill-mwwzj2sCD3s-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+
+/*  ================================ MEDIA QUERIES  ================================ */
+/*=================================================================================== */
+
+/*
+HASTA 576px NO HAY FONDO A LA IZQUIERDA NI DECORACION A LA DERECHA
+HASTA 768px HAY FONDO A LA IZQUIERDA Y NADA A LA DERECHA
+A PARTIR DE 992 YA NO HAY FONDO A LA IZQUIERDA Y HAY DECO A LA DERECHA
+
+*/
+
+/* MODO DISPOSITIVOS A PARTIR DE 992PX */
+/****************************************/
+@media screen and (max-width:992px) {
+    #input-prefijo-celular,
+    #input-num-celular{
+        display:block;
+        width: 100%;
+    }
+    /*No conviene mostrar la decoración junto al formulario en una pantalla tan pequeña*/
+    .decoracion-formulario{
+        display: none;
+    }
+
+    .contenedor-contenido-contacto{
+        grid-template-columns: 1fr;
+    }
+    
+}
+
+/* MODO DISPOSITIVOS MOVILES ENTRE 576 Y 768PX */
+/*************************************************/
+@media screen and (min-width:576px) and (max-width:768px) {
+    /*acá se muestra sólo la imagen de fondo a la izquierda y nada a la derecha (escondo el div de decoración*/
+    .contenedor-formulario{
+        background-image: url("../images/contacto/rafael-hoyos-weht-vM0tW-ruSSU-unsplash.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+
+

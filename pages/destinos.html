@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Argentina a un click - Destinos</title>
+    <!-- Agrego el link al CDN de fontAwesome para que se vean los iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!--Favicon-->
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <!--Termina Favicon-->
+
+    <link rel="stylesheet" href="../estilos/reset.css"> <!-- reset -->
+    <link rel="stylesheet" href="../estilos/global.css"> <!-- variables y clases de utilidad -->
+    <link rel="stylesheet" href="../estilos/header.css"> <!-- header/navbar -->
+    <link rel="stylesheet" href="../estilos/destinos.css"> <!-- destinos (esta página) -->
+    <link rel="stylesheet" href="../estilos/footer.css"> <!-- footer -->
+
+</head>
+<body>
+    <div class="contenedor-general">
+        <header class="encabezado padding-alrededor">
+            <div class="contenedor-logo">  
+                <a class="logo" href="../index.html">Argentina a un Click !</a>
+            </div><!--fin del logo-->
+
+            <!--NAV-->
+            <nav id="nav__contenedor">
+                <ul class="nav__lista-links">
+                    <li class="nav__link-simple">
+                        <a href="../index.html">Inicio</a>
+                    </li>
+                    <li class="link-con-submenu">
+                        Nuestros Hoteles <span><i class="fa-solid fa-caret-down"></i></span>
+                        <!-- ACA VA UN SUBMENU-->
+                        <ul class="nav__submenu">
+                            <li class="nav__submenu-item"><a href="">Hotel de Damián</a></li>
+                            <li class="nav__submenu-item"><a href="">Hotel de Franco</a></li>
+                            <li class="nav__submenu-item"><a href="">Hotel de Juan Pablo</a></li>
+                            <li class="nav__submenu-item"><a href="">Hotel de Verónica</a></li>
+                            <li class="nav__submenu-item"><a href="">Hotel de Sabrina</a></li>
+                        </ul><!--fin del submenu-->
+                    </li><!--fin del link con submenu-->
+                    <li  class="nav__link-simple">
+                        <a href="../pages/destinos.html">Destinos</a> <!--ACÁ PODRIA HABER TAMBIEN UN SUBMENU-->
+                    </li>
+                    <li class="nav__link-simple">
+                        <a href="/pages/contacto.html">Contacto</a>
+                    </li>
+                    <li  class="nav__link-simple">
+                        <a href="/pages/aboutUs.html">Acerca de nosotros...</a>
+                    </li>
+                </ul>    
+            </nav><!--fin del NAV-->
+            <!--ESTE ES EL BOTON QUE MUESTRA EL MENU EN LAS PANTALLAS MÁS PEQUEÑAS. NO DEBE VERSE EN MODO ESCRITORIO-->
+            <button id="btn__menu-movil"><i class="fa-solid fa-bars"></i></button>
+        </header><!--fin del header-->
+
+        <main>
+            <h1 class="texto-centrado">Los destinos más emocionantes, al alcance de un click!</h1>
+            <p class="txt-presentacion texto-centrado">Te invitamos a descubrir los maravillosos lugares de nuestro país en 
+                el que tenemos hoteles y opciones de alojamiento:
+            </p>
+
+            <div class="listado-destinos">
+
+                <!--BARILOCHE-->
+                <article class="contenedor-destino">
+                    <h2 class="texto-centrado">Bariloche</h2>
+                    <div class="contendedor-destino__presentacion">
+                        <div class="contenedor-destino__presentacion-imagen">
+                            <img src="../images/bariloche.jpg" alt="paisaje de Bariloche">
+                        </div>
+                        <div class="contenedor-destino__presentacion-texto">
+                            <h3 class="texto-centrado">Visita Bariloche y participa de todas sus excursiones!</h3>
+                            <p><span><i class="fa-regular fa-compass"></i></span> Circuito Chico: Paseo en barco por el lago Nahuel Huapi, con paradas
+                                en la Isla Victoria y el Bosque de Arrayanes. Cerro Tronador: Caminata
+                                hasta el glaciar Ventisquero Negro, con vistas impresionantes de la
+                                cordillera de los Andes. Siete Lagos: Paseo en auto por un camino
+                                escénico que bordea siete lagos de color turquesa. Villa La Angostura:
+                                Pueblo pintoresco a orillas del lago Nahuel Huapi, con centro
+                                comercial y opciones gastronómicas.
+                            </p>
+                            <p><span><i class="fa-regular fa-compass"></i></span>Aventura: Rafting en el río Manso: Recorrido emocionante por un río de
+                                aguas rápidas, con rápidos de hasta clase IV. Cabalgata por la
+                                cordillera: Exploración única de paisajes de montaña, guiada por
+                                expertos a través de bosques, praderas y ríos. Trekking al Cerro
+                                Catedral: Caminata desafiante hasta la cima del Cerro Catedral, el
+                                punto más alto de la zona. Parapente: Experiencia inolvidable para
+                                sobrevolar los lagos y montañas de Bariloche.
+                            </p>
+                            <p><span><i class="fa-regular fa-compass"></i></span>Jardín Botánico: Paseo tranquilo por un jardín con más de
+                                2000 especies de plantas de todo el mundo. Colonia Suiza: Réplica de
+                                un pueblo suizo con restaurantes, tiendas y un museo. Parque Nacional
+                                Nahuel Huapi: Parque nacional con actividades para disfrutar en
+                                familia, como senderismo, pesca y camping. Centro Cívico: Centro
+                                cívico de Bariloche, con hermosa arquitectura y monumentos históricos.
+                            </p>
+                            <p>
+                                Para más información:
+                                <a
+                                    href="https://barilocheturismo.gob.ar/es/home"
+                                    target="_blank"
+                                    >click aqui</a>
+                            </p>
+                        </div> <!--fin de contenedor-destino__presentacion-texto-->
+                    </div>
+                    <div class="contenedor-destino__galeria">
+                        <!--Galería con Bootstrap va aqui -->
+                    </div><!--fin contenedor-destino__galeria-->
+                </article><!--fin contenedor destino-->
+
+                <!--MENDOZA-->
+                <article class="contenedor-destino">
+                    <h2 class="texto-centrado">Mendoza</h2>
+                    <div class="contendedor-destino__presentacion">
+                        <div class="contenedor-destino__presentacion-imagen">
+                            <img src="../images/mendoza.jpg" alt="paisaje de Mendoza">
+                        </div>
+                        <div class="contenedor-destino__presentacion-texto">
+                            <h3 class="texto-centrado">Descubre Mendoza!</h3>
+                            <p><span><i class="fa-regular fa-compass"></i></span> Mendoza, tierra de vinos y montañas, ofrece una gran variedad de
+                                excursiones para todos los gustos. Desde amantes del vino hasta
+                                aventureros y exploradores, aquí encontrarás la actividad perfecta
+                                para ti.
+                            </p>
+                            <p><span><i class="fa-regular fa-compass"></i></span>Ruta del Vino: Embárcate en un recorrido por las bodegas de la región
+                                y descubre los secretos de la elaboración del vino mendocino. Degusta
+                                diferentes variedades, aprende sobre el proceso de producción y
+                                disfruta de la arquitectura y los paisajes de los viñedos.
+                            </p>
+                            <p><span><i class="fa-regular fa-compass"></i></span>Alta Montaña: Atrévete a explorar la imponente Cordillera de los
+                                Andes. Realiza trekking por senderos que te llevarán a lugares
+                                paradisíacos, como el Aconcagua, el pico más alto de América, o el
+                                Puente del Inca, una maravilla natural formada por la erosión del río.
+                            </p>
+                            <p><span><i class="fa-regular fa-compass"></i></span>Aventura: Si buscas adrenalina, Mendoza te ofrece rafting en el río
+                                Mendoza, puenting, parapente y tours en 4x4 por el desierto. Vive
+                                experiencias emocionantes y conecta con la naturaleza en estado puro.
+                            </p>
+                            <p><span><i class="fa-regular fa-compass"></i></span>Ciudad de Mendoza: No te pierdas la encantadora ciudad de Mendoza.
+                                Recorre su centro histórico, visita la Plaza Independencia, sube al
+                                Cerro de la Gloria para obtener vistas panorámicas y sumérgete en la
+                                cultura local.
+                            </p>
+                            <p><span><i class="fa-regular fa-compass"></i></span>Otras excursiones: Spa, clases de cocina, tours gastronómicos, visitas
+                                a pueblos cercanos como Luján de Cuyo o Maipú... ¡Las opciones son
+                                infinitas!
+                            </p>
+                            <p>
+                                Para más información:
+                                <a
+                                    href="https://mendoza.tur.ar/"
+                                    target="_blank"
+                                    >click aqui</a>
+                            </p>
+                        </div> <!--fin de contenedor-destino__presentacion-texto-->
+                    </div>
+                    <div class="contenedor-destino__galeria">
+                        <!--Galería con Bootstrap va aqui -->
+                    </div><!--fin contenedor-destino__galeria-->
+                </article><!--fin contenedor destino-->
+
+                <!--CÓRDOBA-->
+                <article class="contenedor-destino">
+                    <h2 class="texto-centrado">Córdoba</h2>
+                    <div class="contendedor-destino__presentacion">
+                        <div class="contenedor-destino__presentacion-imagen">
+                            <img src="../images/cordoba.jpg" alt="paisaje de Villa Alpina, Córdoba">
+                        </div>
+                        <div class="contenedor-destino__presentacion-texto">
+                            <h3 class="texto-centrado">Córdoba tiene un sinfín de lugares para conocer...</h3>
+                            <p><span><i class="fa-regular fa-compass"></i></span>Valle de Calamuchita:Esta región montañosa es conocida por sus hermosos 
+                                lagos, ríos y cascadas. Es un lugar ideal para practicar senderismo, pesca y otros deportes acuáticos. En el valle también 
+                                se encuentran algunos pueblos encantadores, como Villa del Totoral y La Falda.
+                            </p>
+                            <p><span><i class="fa-regular fa-compass"></i></span>Manzana Jesuítica y la Catedral de Córdoba:La Manzana Jesuítica es un 
+                                conjunto de edificios históricos que datan del siglo XVII y que albergan la Universidad Nacional de Córdoba. La Catedral 
+                                de Córdoba, también ubicada en este conjunto, es una de las iglesias más antiguas de Argentina y es conocida por su 
+                                hermosa arquitectura barroca.
+                            </p>
+                            <p><span><i class="fa-regular fa-compass"></i></span>Traslasierra:Esta región árida se encuentra al oeste de Córdoba y alberga 
+                                algunos de los paisajes más espectaculares de la provincia. Aquí se puede visitar el Parque Nacional Quebrada del Condorito, 
+                                donde se puede observar al cóndor andino, una de las aves más grandes del mundo. También se puede visitar el Cerro Uritorco, 
+                                un lugar que se dice que tiene poderes místicos.
+                            </p>
+                            <p><span><i class="fa-regular fa-compass"></i></span>Camino de las Altas Cumbres:Esta ruta escénica atraviesa las sierras de 
+                                Córdoba y ofrece impresionantes vistas de las montañas, los valles y los ríos. A lo largo del camino, se puede visitar una 
+                                serie de pueblos pintorescos, como Mina Clavero y Villa General Belgrano.
+                            </p>
+                            <p>
+                                Para más información:
+                                <a
+                                    href="https://www.cordobaturismo.gov.ar/"
+                                    target="_blank"
+                                    >click aqui</a>
+                            </p>
+                        </div> <!--fin de contenedor-destino__presentacion-texto-->
+                    </div>
+                    <div class="contenedor-destino__galeria">
+                        <!--Galería con Bootstrap va aqui -->
+                    </div><!--fin contenedor-destino__galeria-->
+                </article><!--fin contenedor destino-->
+
+                <!--JUJUY-->
+                <article class="contenedor-destino">
+                    <h2 class="texto-centrado">Jujuy</h2>
+                    <div class="contendedor-destino__presentacion">
+                        <div class="contenedor-destino__presentacion-imagen">
+                            <img src="../images/jujuy.jpg" alt="paisaje de Jujuy">
+                        </div>
+                        <div class="contenedor-destino__presentacion-texto">
+                            <h3 class="texto-centrado">Experimenta la magia de los Andes</h3>
+                            <p><span><i class="fa-regular fa-compass"></i></span> Jujuy,tierra de contrastes
+                                y colores vibrantes, te invita a sumergirte en la cultura milenaria,
+                                la naturaleza imponente y la calidez de su gente. Desde la Quebrada de
+                                Humahuaca, Patrimonio de la Humanidad, hasta las Salinas Grandes y los
+                                pueblos históricos, Jujuy ofrece un abanico de experiencias para todos
+                                los gustos.
+                            </p>
+                            <p><span><i class="fa-regular fa-compass"></i></span>Descubriendo la Quebrada de Humahuaca: Recorre este valle
+                                multicolorido, declarado Patrimonio de la Humanidad por la UNESCO, y
+                                maravíllate con sus cerros multicolores, pueblos tradicionales y
+                                sitios arqueológicos. Puedes transitarla en auto, bus, bicicleta o
+                                senderismo, disfrutando de paisajes únicos.
+                            </p>
+                            <p><span><i class="fa-regular fa-compass"></i></span> Las Salinas Grandes, un
+                                mar de sal: Adéntrate en este salar infinito, uno de los más grandes
+                                de Argentina, y vive una experiencia surrealista. Camina sobre la
+                                superficie de sal, visita el Museo de Sal o emprende un tour en 4x4
+                                para explorar este paisaje fascinante.
+                            </p>
+                            <p><span><i class="fa-regular fa-compass"></i></span> Purmamarca, un pueblo
+                                pintoresco: Recorre las calles empedradas de este pueblo encantador,
+                                ubicado al pie del Cerro de los Siete Colores. Visita el mercado de
+                                artesanías, sube al cerro para disfrutar de vistas panorámicas o
+                                simplemente déjate cautivar por su ambiente acogedor.
+                            </p>
+                            <p><span><i class="fa-regular fa-compass"></i></span>  Tilcara,
+                                historia entre cerros: Explora este pueblo histórico, antigua capital
+                                de la civilización Omaguaca, y descubre sus ruinas arqueológicas.
+                                Visita el Pucará de Tilcara, el Museo Regional Arqueológico o la
+                                Iglesia San Francisco y adéntrate en la historia de esta región.
+                            </p>
+                            <p><span><i class="fa-regular fa-compass"></i></span> Humahuaca: Conoce esta ciudad colonial, y admira sus edificios históricos 
+                                como la Catedral de San Francisco de Jujuy y el Cabildo de Jujuy. Visita el Mercado
+                                Municipal para comprar artesanías y productos locales y disfruta de la
+                                vibrante cultura local.
+                            </p>
+                            <p><span><i class="fa-regular fa-compass"></i></span>  Más allá de lo tradicional: Jujuy ofrece un
+                                sinfín de opciones para quienes buscan aventura. Visita el Parque
+                                Nacional Yacuma, navega en balsa por el Río Grande o recorre la
+                                Serranía de Hornocal, un paisaje geológico de colores vibrantes.
+                            </p>
+                            <p>
+                                Para más información:
+                                <a
+                                    href="http://www.turismo.jujuy.gob.ar/"
+                                    target="_blank"
+                                    >click aqui</a>
+                            </p>
+                        </div> <!--fin de contenedor-destino__presentacion-texto-->
+                    </div>
+                    <div class="contenedor-destino__galeria">
+                        <!--Galería con Bootstrap va aqui -->
+                    </div><!--fin contenedor-destino__galeria-->
+                </article><!--fin contenedor destino-->
+
+                <!--CHUBUT-->
+                <article class="contenedor-destino">
+                    <h2 class="texto-centrado">Chubut</h2>
+                    <div class="contendedor-destino__presentacion">
+                        <div class="contenedor-destino__presentacion-imagen">
+                            <img src="../images/chubut.jpg" alt="Glaciar Perito Moreno, Chubut">
+                        </div>
+                        <div class="contenedor-destino__presentacion-texto">
+                            <h3 class="texto-centrado">Belleza natural incomparable</h3>
+                            <p><span><i class="fa-regular fa-compass"></i></span>Península Valdés:Esta península es un sitio declarado Patrimonio de 
+                                la Humanidad por la UNESCO y alberga una gran variedad de vida silvestre, incluidos pingüinos, ballenas, focas y leones 
+                                marinos. Es un lugar ideal para observar animales en su hábitat natural.
+                            </p>
+                            <p><span><i class="fa-regular fa-compass"></i></span>Lago Argentino:Este lago es el más grande de Argentina y alberga el Glaciar 
+                                Perito Moreno, uno de los glaciares más impresionantes del mundo. Se puede realizar un paseo en barco por el lago para ver 
+                                el glaciar de cerca, o incluso caminar sobre el hielo.
+                            </p>
+                            <p><span><i class="fa-regular fa-compass"></i></span>Parque Nacional Los Alerces:Este parque nacional alberga alerces, una especie 
+                                de árbol que puede vivir hasta 2.500 años. El parque también ofrece una serie de rutas de senderismo que atraviesan bosques, 
+                                montañas y lagos.
+                            </p>
+                            <p><span><i class="fa-regular fa-compass"></i></span>Punta Tombo:Esta colonia de pingüinos de Magallanes es la más grande de 
+                                América del Sur, con más de 1 millón de pingüinos. Se puede caminar entre los pingüinos y observarlos de cerca.
+                            </p>
+                            <p><span><i class="fa-regular fa-compass"></i></span>Ciudad de Trelew:Esta ciudad es la segunda más grande de Chubut y es un 
+                                buen punto de partida para explorar la región. En Trelew se puede visitar el Museo Paleontológico Egidio Feruglio, uno de 
+                                los museos de paleontología más importantes de América del Sur. También se puede realizar un tour por la ciudad para conocer 
+                                su historia y cultura.
+                            </p>
+                            <p>
+                                Para más información sobre actividades turísticas:
+                                <a
+                                    href="https://chubutpatagonia.gob.ar/"
+                                    target="_blank"
+                                    >click aqui</a>
+                            </p>
+
+                        </div> <!--fin de contenedor-destino__presentacion-texto-->
+                    </div>
+                    <div class="contenedor-destino__galeria">
+                        <!--Galería con Bootstrap va aqui -->
+                    </div><!--fin contenedor-destino__galeria-->
+                </article><!--fin contenedor destino-->
+
+            </div><!--fin seccion listado destinos-->
+
+        </main><!--fin main-->
+
+        <footer>
+            <div class="contenedor-logo-footer">
+                <img src="../images/logo-argentina.png" alt="">
+            </div><!--fin contenedor logo footer-->
+
+            <div class="footer__contenido">
+                <p>Te esperamos en nuestras redes sociales ! </p>
+                <ul class="menu-redes-footer">
+                    <li class="menu-redes-footer__link"><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li class="menu-redes-footer__link"><a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li class="menu-redes-footer__link"><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></li>
+                    <li class="menu-redes-footer__link"><a href="https://ar.pinterest.com/" target="_blank"><i class="fa-brands fa-pinterest"></i></a></li>
+                    <li class="menu-redes-footer__link"><a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div><!--fin footer__contenido-->
+
+        </footer><!--fin footer-->
+
+    </div><!--fin contenedor general-->
+    <!--Script que maneja el menú del navbar-->
+    <script src="../js/script.js"></script>
+</body>
+</html>

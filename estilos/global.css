@@ -1,0 +1,56 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&family=Sora:wght@100..800&display=swap');
+
+/*colores: Marrón: #4E3B31 (50%)
+Beige: #F5F5DC (30%)
+Verde oliva: #556B2F (20%)*/
+
+/* ===========================================================================*/
+/*  IMPORTATE !!!! */
+/*  POR DEFECTO EL ESTILO ESTÁ DEFINIDO EN TAMAÑO ESCRITORIO */
+/* ===========================================================================*/
+
+/*Variables */
+/*===========*/
+:root{
+    --fuente-regular:"Sora", sans-serif;
+    --fuente-acento: "Sawarabi Mincho", serif;
+    
+    --color-principal: #4E3B31; /*rgb(78, 59, 49);*/
+    --color-secundario: #F5F5DC;
+    --color-acento:#556B2F;
+
+    /*ALGUNOS COLORES QUE ME GUSTAN */
+    --color-raspberry: #CE2D4F;
+    --color-navajo-white: #FFE0B5;
+    --color-seal-brown: #472415;
+    --color-bistre: #3F2613;
+    --color-chamoise: #A98360;
+    --color-antique-white: #FDEED9;
+    --color-carnation-pink: #FFADC6;
+    --color-dogwood-rose: #D4216C;
+    --color-carmine:#991218;
+    --color-russet:#92512E;
+    --color-fern-green:#436A36;
+    --color--cerulean: #0081A7;
+    --color-verdigris:#00AFB9;
+    --color-caput-mortum:#4C2719;
+}
+
+
+/*Clases de utilidad para no repetir código*/
+/*==========================================*/
+
+.contenedor-general{
+    /*Evitar que la página se estire demasiado en pantallas muy grandes*/
+    max-width:1320px;
+    margin:0 auto; /*centramos el contenido de la página*/
+}
+
+.padding-alrededor{
+    padding: 1rem;
+}
+
+.texto-centrado{
+    text-align: center;
+}
