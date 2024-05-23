@@ -32,4 +32,19 @@
     animation-name: animacionTitulo;
     animation-duration: 3s;
     animation-delay: 0.3s;
+    font-size: 2.5rem;
+}
+
+.texto-about{
+    font-size: 1.75rem;
+}
+
+
+.fecha{
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+    text-align: end;
+    margin-top: 2.5rem;
+    margin-right: 1rem;
 }

@@ -1,0 +1,52 @@
+body{
+    background-color: rgb(222, 233, 211);
+}
+.hotel{
+    margin-top:5%;
+    border: 1px solid black; 
+}
+.hotel h2{
+    font-family:serif;
+}
+
+.hotel2{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+
+.section2 {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 1%;
+    border: 1px solid black;
+   background-color: rgb(166, 175, 157);
+}
+
+.hotel2 img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease; 
+}
+
+.hotel2 img:hover {
+    transform: scale(1.2); /* agrandamos la imagen a un 120% */
+    border: 2px solid black;
+
+}
+
+
+
+.article2{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    
+}
+
+.article2 p{
+    color:rgb(5, 7, 26);
+}
+.mapa {
+    overflow: hidden;
+
+}
