@@ -157,9 +157,13 @@ A PARTIR DE 992 YA NO HAY FONDO A LA IZQUIERDA Y HAY DECO A LA DERECHA
 @media screen and (min-width:576px) and (max-width:768px) {
     /*acá se muestra sólo la imagen de fondo a la izquierda y nada a la derecha (escondo el div de decoración*/
     .contenedor-formulario{
-        background-image: url("../images/contacto/rafael-hoyos-weht-vM0tW-ruSSU-unsplash.jpg");
+        background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),
+        url("../images/contacto/rafael-hoyos-weht-vM0tW-ruSSU-unsplash.jpg");
         background-size: cover;
         background-repeat: no-repeat;
+    }
+    .formato-label{
+        text-shadow: 3px 3px 2px rgba(250,250,250,0.6); /*para aumentar el contraste entre el texto y el fondo*/
     }
 }
 
