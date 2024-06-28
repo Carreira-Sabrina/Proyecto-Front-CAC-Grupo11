@@ -24,7 +24,7 @@
     cursor: pointer;
     color:var(--color-secundario);
     text-decoration: none; /*porque Bootstrap sobreescribe algunos estilos :( */
-    font-size: 2rem;
+    font-size: 1.75rem;
 }
 
 .nav__lista-links li{
