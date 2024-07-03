@@ -1,5 +1,5 @@
 
-const url_API_excursiones = "http://127.0.0.1:5000/api/obtener_excursiones";
+const url_API_excursiones = "https://carreirasabrina.pythonanywhere.com/api/obtener_excursiones";
 
 
 //Este es el elemento <section> que recibirá las tarjetas con las excursiones
